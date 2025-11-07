@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String            @id @default(uuid())
+  userId             String            @unique
+  profilePicture      String
+  userName           String
+  location            String
+  IsVerified          Boolean           @default(false)
+  followers           Int
+  following           Int
+  coverPicture       String?
+  profileCount        Int @default(0)
+}
+
+
+
