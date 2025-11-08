@@ -1,12 +1,10 @@
-
-
-import { TypewriterEffectSmoothDemo } from "@/components/landing/Hero";
-
+import { DotBackgroundDemo } from "@/components/landing/landing";
 
 export default function Home() {
   return (
    <>
-   <TypewriterEffectSmoothDemo/>
+  <DotBackgroundDemo/>
+   
    <h1 className="   font-stretch-semi-condensed">
     Hello
    </h1>
