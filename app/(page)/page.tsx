@@ -1,13 +1,11 @@
-import { DotBackgroundDemo } from "@/components/landing/landing";
 
+import Dashboard from "./dashboard/page";
 export default function Home() {
   return (
    <>
-  <DotBackgroundDemo/>
+  
    
-   <h1 className="   font-stretch-semi-condensed">
-    Hello
-   </h1>
+   <Dashboard/>
    </>
   );
 }
