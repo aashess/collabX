@@ -24,9 +24,9 @@ export default function BrandsGrid() {
       {brands.map((brand, i) => (
         <Card
           key={i}
-          image={brand.image}
-          title={brand.name}
-          subtitle={brand.tagline}
+          // image={brand.image}
+          // title={brand.name}
+          // subtitle={brand.tagline}
         />
       ))}
     </div>
